@@ -30,7 +30,8 @@ Clone o repositório:
 
 bash
 git clone https://github.com/DiegoCard117/DomainExec.git
-cd remote-command-executor
+
+cd DomainExec
 Instale as dependências:
 
 bash
