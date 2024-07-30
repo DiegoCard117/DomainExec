@@ -29,7 +29,7 @@ npm ou yarn
 Clone o repositório:
 
 bash
-git clone https://github.com/seu-usuario/remote-command-executor.git
+git clone https://github.com/DiegoCard117/DomainExec.git
 cd remote-command-executor
 Instale as dependências:
 
