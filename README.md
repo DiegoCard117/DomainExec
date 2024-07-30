@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+DomainExec
+Descrição
+O DomainExec é um programa web desenvolvido com Next.js, SQLite e Tailwind CSS. Ele permite a execução de comandos PowerShell e CMD em computadores dentro de um domínio específico. Com esta ferramenta, você pode cadastrar comandos, tipos de terminais e, em breve, adicionar uma lista de computadores.
 
-## Getting Started
+Funcionalidades
+Cadastro de Comandos: Permite adicionar, editar e excluir comandos que serão executados nos computadores.
+Tipos de Terminais: Permite cadastrar diferentes tipos de terminais (PowerShell, CMD).
+Execução Remota: Conecta a uma porta específica de computadores dentro do domínio e executa os comandos cadastrados.
+(Em Desenvolvimento) Lista de Computadores: Possibilidade de gerenciar uma lista de computadores no sistema.
+Tecnologias Utilizadas
+Next.js: Framework React para desenvolvimento web.
+SQLite: Banco de dados leve e auto contido.
+Tailwind CSS: Framework CSS para estilização rápida e customizável.
+Requisitos
+Node.js (versão 14 ou superior)
+npm ou yarn
+SQLite
+Instalação
+Clone o repositório:
 
-First, run the development server:
+bash
+Copiar código
+git clone https://github.com/seu-usuario/remote-command-executor.git
+cd remote-command-executor
+Instale as dependências:
 
-```bash
+bash
+Copiar código
+npm install
+# ou
+yarn install
+Configure o banco de dados SQLite:
+
+Inicie o servidor de desenvolvimento:
+bash
+Copiar código
 npm run dev
-# or
+# ou
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Acesse o aplicativo no navegador:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+adicione as variaveis de ambiente
+NEXT_PUBLIC_USER = usuario com permissao de admin 
+NEXT_PUBLIC_USER_PASS = senha do usuario com permisao de admin
+NEXT_PUBLIC_DOMAIN = dominio em que esta os computadores
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+bash
+Copiar código
+http://localhost:3000
+Configuração
+Porta de Conexão: Certifique-se de configurar a porta correta para conexão com os computadores dentro do domínio no arquivo de configuração.
+Uso
+Acesse a interface web.
+Navegue até a seção de Cadastro de Comandos para adicionar novos comandos.
+Selecione o tipo de terminal (PowerShell ou CMD).
+Execute os comandos nos computadores cadastrados.
+Contribuição
+Fork o projeto.
+Crie uma branch para sua feature (git checkout -b feature/nova-feature).
+Commit suas mudanças (git commit -m 'Adiciona nova feature').
+Push para a branch (git push origin feature/nova-feature).
+Abra um Pull Request.
+Licença
+Este projeto está licenciado sob a MIT License.
